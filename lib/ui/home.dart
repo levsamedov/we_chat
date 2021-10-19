@@ -87,7 +87,7 @@ class _HomeState extends State<Home> {
         ],
       );
   Widget get _listView => ListView.builder(
-        itemCount: 10,
+        itemCount: userData.lenght,
         itemBuilder: (context, index) {
           return _listViewCard(user: userData(index));
         },
@@ -105,4 +105,5 @@ class _HomeState extends State<Home> {
           ),
         ),
       );
+  late final User user;
 }

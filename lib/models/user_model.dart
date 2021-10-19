@@ -1,5 +1,5 @@
 class User {
-  final String name, message, time;
+  final String? name, message, time;
   User({
     this.name,
     this.message,
@@ -7,7 +7,7 @@ class User {
   });
 }
 
-List <String> userData = [
+List<User> userData = [
   User(
     name: "Devin Glover",
     message: "Sent an attachment",
