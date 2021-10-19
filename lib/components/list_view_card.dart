@@ -4,6 +4,7 @@ import 'package:wechat/ui/home.dart';
 
 
 class ListViewCard extends StatelessWidget {
+    late final User user;
     
   @override
   Widget build(BuildContext context) {
