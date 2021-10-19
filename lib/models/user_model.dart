@@ -7,7 +7,7 @@ class User {
   });
 }
 
-List User userData = [
+List <dynamic> userData = [
   User(
     name: "Devin Glover",
     message: "Sent an attachment",
