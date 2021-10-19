@@ -14,7 +14,7 @@ class ListViewCard extends StatelessWidget {
       ),
       title: Wrap(
         children: [
-          Text(user!.name),
+          Text(user. name!),
         ],
       ),
     );
