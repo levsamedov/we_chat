@@ -99,7 +99,7 @@ class _HomeState extends State<Home> {
             radius: 24,
           ),
           title: Wrap(
-            children: [Text(user.name),
+            children: [Text(name),
             ],
           ),
         ),
