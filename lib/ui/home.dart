@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wechat/ui/fonts/colors.dart';
+import 'package:wechat/models/user_model.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -88,15 +89,20 @@ class _HomeState extends State<Home> {
   Widget get _listView => ListView.builder(
         itemCount: 10,
         itemBuilder: (context, index) {
-          return _listViewCard;
+          return _listViewCard(user: userData(index));
         },
       );
   Widget get _listViewCard => Card(
         child: ListTile(
-          leading: CircleAvatar(),
-          title: Text('Ali'),
-          subtitle: Text('djdjdjdjdjdjdjdjdjdjdjdj'),
-          trailing: Text('13:40'),
+          leading: CircleAvatar(
+            radius: 24,
+          ),
+          title: Wrap(
+            children: [
+              Text(user.name)
+            ],
+          ),
         ),
       );
+  final User user;
 }
