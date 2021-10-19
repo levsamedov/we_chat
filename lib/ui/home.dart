@@ -92,6 +92,7 @@ class _HomeState extends State<Home> {
           return _listViewCard(user: userData(index));
         },
       );
+  final User user;
   Widget get _listViewCard => Card(
         child: ListTile(
           leading: CircleAvatar(
@@ -104,5 +105,4 @@ class _HomeState extends State<Home> {
           ),
         ),
       );
-  final User user;
 }
