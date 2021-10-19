@@ -23,4 +23,19 @@ List <dynamic> userData = [
     message: "Same to you!",
     time: "12:02",
   ),
+  User(
+    name: "Dollie Santos",
+    message: "Same to you!",
+    time: "12:02",
+  ),
+  User(
+    name: "Dollie Santos",
+    message: "Same to you!",
+    time: "12:02",
+  ),
+  User(
+    name: "Dollie Santos",
+    message: "Same to you!",
+    time: "12:02",
+  ),
 ];
