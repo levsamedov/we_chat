@@ -1,30 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:wechat/models/user_model.dart';
 
 class ListViewCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(
-        horizontal: kDefaultPadding,
-        vertical: kDefaultPadding * 0.75,
+    return ListTile(
+      leading: CircleAvatar(
+        radius: 24.0,
       ),
-      child: Row(
+      title: Wrap(
         children: [
-          CircleAvatar(
-            radius: 24.0,
-          ),
-          Expanded(
-            child: Padding(
-              padding: EdgeInsets.symmetric(
-                horizontal: kDefaultPadding,
-              ),
-              child: Column(
-                children: [
-                  Text(user.name),
-                ],
-              ),
-            ),
-          ),
+          Text(user.name),
         ],
       ),
     );
