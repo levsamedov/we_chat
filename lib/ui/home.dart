@@ -89,8 +89,8 @@ class _HomeState extends State<Home> {
       );
   Widget get _listView => ListView.builder(
         itemCount: userData.length,
-        itemBuilder: (context, index) => ListViewCard(user: userData(index),),
+        itemBuilder: (context, index) => ListViewCard(user: userData(index)),
       );
 
-  late final User user;
+  
 }

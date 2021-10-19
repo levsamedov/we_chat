@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wechat/models/user_model.dart';
 
 class ListViewCard extends StatelessWidget {
+    late User user;
   @override
   Widget build(BuildContext context) {
     return ListTile(
