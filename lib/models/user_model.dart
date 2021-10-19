@@ -7,7 +7,7 @@ class User {
   });
 }
 
-List userData = [
+List <String> userData = [
   User(
     name: "Devin Glover",
     message: "Sent an attachment",
