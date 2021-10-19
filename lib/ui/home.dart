@@ -100,7 +100,6 @@ class _HomeState extends State<Home> {
           ),
           title: Wrap(
             children: [
-              Text(user.name)
             ],
           ),
         ),
